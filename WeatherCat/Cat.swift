@@ -17,15 +17,21 @@ struct Weather: Codable {
     var name: String
 }
 
+struct CatImage: Codable {
+    var id: Int
+    var image_name: String
+}
+
 struct Cat: Codable {
-    var latitude: String?
-    var longitude: String?
+    var latitude: Double?
+    var longitude: Double?
     var city: String?
+    var units: String
     var temp: Double
     var humidity: Int
     var wind: Wind
     var weather: [Weather]
-    var cat: String
+    var cat: CatImage
 }
 
 struct CatResponse: Codable {

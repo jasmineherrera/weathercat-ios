@@ -46,7 +46,7 @@ class ViewController: UIViewController {
         temperatureLabel = UILabel()
         temperatureLabel.translatesAutoresizingMaskIntoConstraints = false
         temperatureLabel.text = "30°"
-        temperatureLabel.font = .boldSystemFont(ofSize: 70)
+        temperatureLabel.font = .boldSystemFont(ofSize: 60)
         view.addSubview(temperatureLabel)
         
         
@@ -55,11 +55,11 @@ class ViewController: UIViewController {
         layout.minimumLineSpacing = padding
         layout.minimumInteritemSpacing = padding
         
-        let one = Temperature(time: "8", temp: "15")
-        let two = Temperature(time: "9", temp: "21")
-        let three = Temperature(time: "10", temp: "20")
-        let four = Temperature(time: "11", temp: "16")
-        let five = Temperature(time: "12", temp: "17")
+        let one = Temperature(time: "8", temp: "15°")
+        let two = Temperature(time: "9", temp: "21°")
+        let three = Temperature(time: "10", temp: "20°")
+        let four = Temperature(time: "11", temp: "16°")
+        let five = Temperature(time: "12", temp: "17°")
         temps = [one, two, three, four, five]
         
         tempCollectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
@@ -113,14 +113,14 @@ class ViewController: UIViewController {
         locationLabel = UILabel()
         locationLabel.translatesAutoresizingMaskIntoConstraints = false
         locationLabel.text = "Ithaca"
-        locationLabel.font = .boldSystemFont(ofSize: 50)
+        locationLabel.font = .boldSystemFont(ofSize: 40)
         view.addSubview(locationLabel)
         
         
         degreeButton = UILabel()
         degreeButton.translatesAutoresizingMaskIntoConstraints = false
         degreeButton.text = "F"
-        degreeButton.font = .boldSystemFont(ofSize: 40)
+        degreeButton.font = .boldSystemFont(ofSize: 30)
         view.addSubview(degreeButton)
         
         setupConstraints()
@@ -179,10 +179,10 @@ class ViewController: UIViewController {
         NetworkManager.getCat(city: "Ithaca") { catAPI in
             self.catAPI = catAPI
             DispatchQueue.main.async {
-                self.catImageView.image = UIImage(named: catAPI.cat)
+                self.catImageView.image = UIImage(named: catAPI.cat.image_name)
                 self.temperatureLabel.text = "\(catAPI.temp)°"
                 self.windValue.text = "\(catAPI.wind.dir) \(catAPI.wind.speed) mph"
-                self.precipitationValue.text = "\(catAPI.humidity)"
+                self.precipitationValue.text = "\(catAPI.humidity)%"
                 self.locationLabel.text = "\(catAPI.city!)"
             }
         }
@@ -193,7 +193,7 @@ class ViewController: UIViewController {
             self.forecastAPI = forecastAPI
             DispatchQueue.main.async {
                 var tempsAPI: [Temperature] = []
-                for i in forecastAPI.twelveHR_forecast {
+                for i in forecastAPI.twelvehrforecast {
                     let element = Temperature(time: String(i.time), temp: String(i.temp))
                     tempsAPI.append(element)
                 }

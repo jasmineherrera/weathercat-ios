@@ -19,14 +19,13 @@ struct ForecastCollectionView: Codable {
 }
 
 struct ForecastAPI: Codable {
-    var latitude: String?
-    var longitude: String?
+    var latitude: Double?
+    var longitude: Double?
     var city: String?
     var units: String
-    var temp: Double
     var high_temps: [Double]
     var low_temps: [Double]
-    var twelveHR_forecast: [ForecastCollectionView]
+    var twelvehrforecast: [ForecastCollectionView]
 }
 
 struct ForecastResponse: Codable {
