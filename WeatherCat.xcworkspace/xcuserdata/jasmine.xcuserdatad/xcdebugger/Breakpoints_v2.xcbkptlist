@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "DFC19833-E3AF-4C57-BE58-B8EC6996CC40"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "57C6751D-44E6-4FA5-A436-5D2C59D83B9D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WeatherCat/NetworkManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "getForecast(city:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "57C6751D-44E6-4FA5-A436-5D2C59D83B9D - d33ed991b370315c"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static WeatherCat.NetworkManager.getForecast(city: Swift.String, completion: (WeatherCat.ForecastAPI) -&gt; ()) -&gt; ()"
+                  moduleName = "WeatherCat"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jasmine/Desktop/WeatherCat/WeatherCat/NetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "862">
+               </Location>
+               <Location
+                  uuid = "57C6751D-44E6-4FA5-A436-5D2C59D83B9D - ed8a1cefd99af09b"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Foundation.Data&gt;) -&gt; () in static WeatherCat.NetworkManager.getForecast(city: Swift.String, completion: (WeatherCat.ForecastAPI) -&gt; ()) -&gt; ()"
+                  moduleName = "WeatherCat"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jasmine/Desktop/WeatherCat/WeatherCat/NetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "189">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5512CA35-60B2-4F3A-9D28-7EC2ECDA397D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WeatherCat/NetworkManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "getCat(city:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5512CA35-60B2-4F3A-9D28-7EC2ECDA397D - b5b411c65790d7d5"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static WeatherCat.NetworkManager.getCat(city: Swift.String, completion: (WeatherCat.Cat) -&gt; ()) -&gt; ()"
+                  moduleName = "WeatherCat"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jasmine/Desktop/WeatherCat/WeatherCat/NetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "862">
+               </Location>
+               <Location
+                  uuid = "5512CA35-60B2-4F3A-9D28-7EC2ECDA397D - f8da0cebe2a26107"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Foundation.Data&gt;) -&gt; () in static WeatherCat.NetworkManager.getCat(city: Swift.String, completion: (WeatherCat.Cat) -&gt; ()) -&gt; ()"
+                  moduleName = "WeatherCat"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jasmine/Desktop/WeatherCat/WeatherCat/NetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "189">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F202EAC5-90EA-4DD8-842E-553BAC0B7998"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WeatherCat/NetworkManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "getCat(city:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9CA10D05-CAF4-42A3-B5F0-EEADDCA9CD8F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WeatherCat/NetworkManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "getForecast(city:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

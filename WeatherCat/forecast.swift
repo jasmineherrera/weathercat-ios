@@ -8,35 +8,15 @@
 
 import Foundation
 
-enum ForecastCondition {
-    case cloudy
-    case sunny
-    case rainy
-    case windy
-    case snowy
-}
-
 class Forecast {
-    var temperature: String
-    var condition: ForecastCondition
+    var highTemperature: String
+    var lowTemperature: String
+    var day: String
     
-    init(temperature: String, condition: ForecastCondition) {
-        self.temperature = temperature
-        self.condition = condition
+    init(highTemperature: String, lowTemperature: String, day: String) {
+        self.highTemperature = highTemperature
+        self.lowTemperature = lowTemperature
+        self.day = day
     }
     
-    func getConditionString() -> String {
-        switch condition {
-        case .cloudy:
-            return "Clouds"
-        case .sunny:
-            return "Sun"
-        case .rainy:
-            return "Rain"
-        case .windy:
-            return "Wind"
-        case .snowy:
-            return "Snow"
-        }
-    }
 }
